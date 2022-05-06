@@ -34,8 +34,7 @@ Lines don’t affect on each other so can be contained in random order.
 
 File has to have no empty lines.
 
-
-**How to run code**
+**How to use it**
 
 Script accepts a named parameter --duration_in_minutes which defines for how many minutes people should be available.  Minimum number of people that must be available
 should be defined by --minimum_people argument.  Script should read people's calendars from .txt files in the directory provided as an --calendars string and --appointment_date given as year-month-date hour-minute-second which  defines the soonest date which user wants.
