@@ -82,7 +82,7 @@ class Company:
                     employee.insert_unavailability_time(date, date + appointment_time)
                     employee.unavailable.sort()
                     employee.print_unavailability_time()
-                self.find_best_appointment_time(date + appointment_time, number_of_needed_employees, appointment_time)
+                self.find_best_appointment_time(date + appointment_time, number_of_needed_employees, appointment_time + datetime.timedelta(seconds=1))
                 for employee in list_of_available_employees:
                     for el in to_remove_dates:
                         employee.unavailable.remove(el)
